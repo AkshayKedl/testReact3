@@ -1,7 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import ReactGA from "react-ga4";
+import { useEffect } from 'react';
 
 function App() {
+    useEffect(() => {
+      ReactGA.initialize("UA-275881285-1");
+    },[])
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +22,7 @@ function App() {
         >
           Learn React
         </a>
+        <p>still on testing</p>
       </header>
     </div>
   );
